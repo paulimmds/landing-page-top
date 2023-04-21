@@ -24,7 +24,8 @@ header {
     color: var(--two);
 }
 
-header > * {
+header>*,
+.projects>* {
     width: 60%;
     margin: auto;
 }
@@ -106,3 +107,47 @@ header .about-me {
 }
 
 
+/* My Projects Section Style */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--two);
+    gap: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 3.5em;
+    justify-content: center;
+}
+
+.projects h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.projects ul {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.item {
+    width: 8em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .3em;
+
+}
+
+.item div {
+    width: 8em;
+    height: 8em;
+    border-radius: 10%;
+    border: 2px solid var(--four);
+}
+
+.item p {
+    font-size: .8em;
+    text-align: center;
+}
