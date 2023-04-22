@@ -24,8 +24,7 @@ header {
     color: var(--two);
 }
 
-header>*,
-.projects>* {
+header>*, .projects>*, .two>* {
     width: 60%;
     margin: auto;
 }
@@ -150,4 +149,26 @@ header .about-me {
 .item p {
     font-size: .8em;
     text-align: center;
+}
+
+/* Two Section Style */
+
+.two {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--three);
+    padding: 4em;
+}
+
+.two p {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 300;
+    opacity: .9;
+}
+
+.two span {
+    text-align: end;
+    font-weight: 500;
+    font-size: 1em;
 }
